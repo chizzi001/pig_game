@@ -40,7 +40,7 @@ This is a simple dice game built with HTML, CSS and Javascript. It is a game of 
 ![HTML](https://img.shields.io/badge/HTML-05122A?style=for-the-badge&logo=html5)&nbsp;
 ![CSS](https://img.shields.io/badge/CSS-05122A?&style=for-the-badge&logo=css3&logoColor=blue)&nbsp;
 ![JavaScript](https://img.shields.io/badge/JavaScript-05122A?style=for-the-badge&logo=javascript)&nbsp;
-![Netlify](https://img.shields.io/badge/Vercel-05122A?style=for-the-badge&logo=vercel)&nbsp;
+![Vercel](https://img.shields.io/badge/Vercel-05122A?style=for-the-badge&logo=vercel)&nbsp;
 ![VSCode](https://img.shields.io/badge/VSCode-05122A?style=for-the-badge&logo=visual-studio-code&logoColor=blue)&nbsp;
 ![Git](https://img.shields.io/badge/Git-05122A?style=for-the-badge&logo=git)&nbsp;
 ![GitHub](https://img.shields.io/badge/GitHub-05122A?style=for-the-badge&logo=github)&nbsp;
