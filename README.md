@@ -29,11 +29,12 @@ This is a simple dice game built with HTML, CSS and Javascript. It is a game of 
 
 ## License
 
-![Licence](https://img.shields.io/github/license/chizzi001/pig_game?style=for-the-badge)
+![Licence](https://img.shields.io/github/license/chizzi001/pig_game?style=flet-square)
 
 ## Badges
 
 ![GitHub top language](https://img.shields.io/github/languages/top/chizzi001/pig_game?style=for-the-badge)
+
 ![GitHub language count](https://img.shields.io/github/languages/count/chizzi001/pig_game?style=for-the-badge)
 ![GitHub last commit](https://img.shields.io/github/last-commit/chizzi001/pig_game?style=for-the-badge)
 ![GitHub repo size](https://img.shields.io/github/repo-size/chizzi001/pig_game?style=for-the-badge)
