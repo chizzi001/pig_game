@@ -29,7 +29,7 @@ This is a simple dice game built with HTML, CSS and Javascript. It is a game of 
 
 ## License
 
-![Licence](https://img.shields.io/github/license/chizzi001/pig_game?style=flet-square)
+![Licence](https://img.shields.io/github/license/chizzi001/pig_game?style=flat-square)
 
 ## Badges
 
