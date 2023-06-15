@@ -21,7 +21,7 @@ This is a simple dice game built with HTML, CSS and Javascript. It is a game of 
 
 ## Demo
 
-[Live Demo](https://pig-game-ssr.netlify.app/)
+[Live Demo](https://pig-game-ssr.vercel.app/)
 
 ## Tech Stack
 
