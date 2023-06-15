@@ -10,11 +10,11 @@ This is a simple dice game built with HTML, CSS and Javascript. It is a game of 
 - In each turn, a player rolls a dice as many times as he whishes. Each result get added to his ROUND score
 - BUT, if the player rolls a 1, all his ROUND score gets lost. After that, it's the next player's turn
 - The player can choose to 'Hold', which means that his ROUND score gets added to his GLOBAL score. After that, it's the next player's turn
-- The first player to reach 100 points on GLOBAL score wins the game
+- The first player to reach the play selected points on GLOBAL score wins the game
 
 ## How to play
 
-- Enter the final score
+- Enter the final score and click on set score
 - Click on the roll dice button to roll the dice
 - Click on the hold button to hold your score
 - Click on the new game button to start a new game

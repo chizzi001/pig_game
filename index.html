@@ -11,26 +11,38 @@
     <main>
       <section class="player player--0 player--active">
         <h2 class="name" id="name--0">Player 1</h2>
+        <h3 class="turn play--0">Your Turn</h3>
         <p class="score" id="score--0">0</p>
-        <div class="current">
-          <p class="current-label">Current</p>
-          <p class="current-score" id="current--0">0</p>
+        <div class="round">
+          <p class="round-label">ROUND</p>
+          <p class="round-score" id="round--0">0</p>
         </div>
       </section>
       <section class="player player--1">
         <h2 class="name" id="name--1">Player 2</h2>
+        <h3 class="turn play--1 hidden">Your Turn</h3>
         <p class="score" id="score--1">0</p>
-        <div class="current">
-          <p class="current-label">Current</p>
-          <p class="current-score" id="current--1">0</p>
+        <div class="round">
+          <p class="round-label">ROUND</p>
+          <p class="round-score" id="round--1">0</p>
         </div>
       </section>
 
-      <img src="dice-5.png" alt="Playing dice" class="dice" />
+      <img src="" alt="Playing dice" class="dice" />
       <button class="btn btn--new">🔄 New game</button>
       <button class="btn btn--roll">🎲 Roll dice</button>
       <button class="btn btn--hold">📥 Hold</button>
+      <input
+        type="number"
+        name="win--score"
+        id="win--score"
+        aria-label="input win score"
+        placeholder="Final Score"
+        class="input--win"
+      />
+      <button class="btn btn--level">📶 Set Score</button>
     </main>
+
     <script src="script.js"></script>
   </body>
 </html>

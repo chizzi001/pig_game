@@ -7,11 +7,13 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 65.5%;
   box-sizing: border-box;
 }
 
 body {
+  min-width: 330px;
+
   font-family: "Nunito", sans-serif;
   font-weight: 400;
   height: 100vh;
@@ -26,8 +28,10 @@ body {
 main {
   position: relative;
   width: 100rem;
-  height: 60rem;
-  background-color: rgba(255, 255, 255, 0.35);
+  /* min-width: 300px; */
+
+  height: 63rem;
+  background-color: rgba(255, 140, 0, 0.683);
   backdrop-filter: blur(200px);
   filter: blur();
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
@@ -37,12 +41,12 @@ main {
 }
 
 .player {
-  flex: 50%;
+  width: 50%;
   padding: 9rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: all 0.75s;
+  transition: all 0.5s;
 }
 
 /* ELEMENTS */
@@ -56,6 +60,19 @@ main {
   margin-bottom: 1rem;
 }
 
+main section .turn {
+  /* background-color: #6b2247; */
+  /* background-color: rgba(255, 204, 0, 0.544); */
+  background-image: linear-gradient(to top left, #4a3682 0%, #2e04c54e 100%);
+
+  font-size: 2rem;
+  border-radius: 9px;
+  color: #fff;
+  width: 65%;
+  padding: 2rem;
+  text-align: center;
+}
+
 .score {
   font-size: 8rem;
   font-weight: 300;
@@ -64,7 +81,7 @@ main {
 }
 
 .player--active {
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 204, 0, 0.544);
 }
 .player--active .name {
   font-weight: 700;
@@ -73,33 +90,33 @@ main {
   font-weight: 400;
 }
 
-.player--active .current {
+.player--active .round {
   opacity: 1;
 }
 
-.current {
-  background-color: #c7365f;
+.round {
+  background-color: #6b2247;
   opacity: 0.8;
   border-radius: 9px;
   color: #fff;
   width: 65%;
   padding: 2rem;
   text-align: center;
-  transition: all 0.75s;
+  transition: all 0.5s;
 }
 
-.current-label {
+.round-label {
   text-transform: uppercase;
   margin-bottom: 1rem;
   font-size: 1.7rem;
   color: #ddd;
 }
 
-.current-score {
+.round-score {
   font-size: 3.5rem;
 }
 
-/* ABSOLUTE POSITIONED ELEMENTS */
+/* NOTE: ABSOLUTE POSITIONED ELEMENTS */
 .btn {
   position: absolute;
   left: 50%;
@@ -119,7 +136,7 @@ main {
   backdrop-filter: blur(10px);
 
   padding: 0.7rem 2.5rem;
-  border-radius: 50rem;
+  border-radius: 10rem;
   box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
 }
 
@@ -133,15 +150,33 @@ main {
   top: 4rem;
 }
 .btn--roll {
-  top: 39.3rem;
+  top: 35.3rem;
 }
 .btn--hold {
-  top: 46.1rem;
+  top: 42.1rem;
+}
+
+.input--win {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: medium;
+  color: #444;
+  background: none;
+  transition: all 0.2s;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 1rem 0.5rem;
+  border-radius: 10px;
+  top: 50rem;
+  border: none;
+  outline: none;
+}
+.btn--level {
+  top: 55.5rem;
 }
 
 .btn:active {
   transform: translate(-50%, 3px);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
 }
 
 .btn:focus {
@@ -159,10 +194,49 @@ main {
 }
 
 .player--winner {
-  background-color: #2f2f2f;
+  animation: animateBg 3s ease-in-out infinite;
+  background-image: linear-gradient(
+    90deg,
+    #ff0000,
+    #ffff00,
+    #00ff00,
+    #00ffff,
+    #0000ff,
+    #ff00ff,
+    #ff0000,
+    #ffff00
+  );
+  background-size: 1000% 100%;
+}
+@keyframes animateBg {
+  0% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
 }
 
 .player--winner .name {
   font-weight: 700;
   color: #c7365f;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+@media (max-width: 650px) {
+  html {
+    font-size: 40%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .round {
+    width: 100px;
+  }
+  .input--win {
+    width: 90px;
+  }
 }
